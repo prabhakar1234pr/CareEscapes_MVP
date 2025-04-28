@@ -1,6 +1,10 @@
 body {
     font-family: sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f4f4f4; /* Fallback color */
+    background-image: url('../assests/backgrounds/background.webp');
+    background-size: cover; /* Scale the background to cover the element */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the image */
     display: flex;
     justify-content: center;
     align-items: center;
