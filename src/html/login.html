@@ -7,23 +7,25 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <div class="login-container">
-        <img src="../assests/logo.png" alt="CareEscapes AI Logo" class="logo">
-        <h1>Login</h1>
-        <form action="/login" method="post"> <!-- Update action as needed -->
-            <div class="form-group">
-                <label for="username">Username or Email</label>
-                <input type="text" id="username" name="username" required>
-            </div>
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <button type="submit">Login</button>
-            <div class="forgot-password">
-                <a href="#">Forgot Password?</a>
-            </div>
-        </form>
+    <div class="login-page-wrapper">
+        <div class="login-container">
+            <img src="../assests/logo.png" alt="CareEscapes AI Logo" class="logo">
+            <h1>Login</h1>
+            <form action="/login" method="post"> <!-- Update action as needed -->
+                <div class="form-group">
+                    <label for="username">Username or Email</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Login</button>
+                <div class="forgot-password">
+                    <a href="#">Forgot Password?</a>
+                </div>
+            </form>
+        </div>
     </div>
 </body>
 </html> 
