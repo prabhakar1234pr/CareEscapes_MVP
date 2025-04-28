@@ -5,10 +5,9 @@ body {
     background-size: cover; /* Scale the background to cover the element */
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Do not repeat the image */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    display: block; /* Changed from flex to allow normal page flow */
+    height: auto; /* Changed from 100vh to allow scrolling */
+    min-height: 100vh; /* Ensure it at least fills the viewport */
     margin: 0;
 }
 
@@ -78,4 +77,69 @@ button:hover {
 
 .forgot-password a:hover {
     text-decoration: underline;
+}
+
+/* Landing Page Styles */
+.main-header {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed; /* Keep header at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    height: 50px; /* Adjust as needed */
+    width: auto;
+}
+
+.main-header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.main-header nav ul li {
+    margin-left: 20px;
+}
+
+.main-header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.main-header nav ul li a:hover {
+    color: #007bff;
+}
+
+.auth-links a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.auth-links a:hover {
+    text-decoration: underline;
+}
+
+.landing-content {
+    padding-top: 80px; /* Adjust based on header height */
+    text-align: center;
+    color: white; /* Assuming dark background, light text */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5); /* Add shadow for readability */
 } 
